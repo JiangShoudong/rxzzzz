@@ -21,6 +21,7 @@ class ViewController: UIViewController {
             cell.textLabel?.text = music.name
             cell.detailTextLabel?.text = music.singer
         }.disposed(by: disposeBag)
+        
         tableView.rx.modelSelected(Music.self).subscribe(onNext: { (music) in
             print("你选的歌曲信息【\(music)】")
         }).disposed(by: disposeBag)
