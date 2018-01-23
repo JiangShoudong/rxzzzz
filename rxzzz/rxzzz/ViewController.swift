@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        example1()
-        example3()
+        example4()
 }
 //MARK:- 观察者（Observer）
     /*
@@ -38,9 +38,23 @@ class ViewController: UIViewController {
      2.配合bindTo方法使用
      四、使用Binder创建观察者
      也可配合Observable的数据绑定方法（bindTo）使用
-     五、自定义可绑定属性
      
+     五、自定义可绑定属性
+     我们想让UI控件创建出来就有一些观察者，而不必每次都为他们单独去创建观察者。比如，我们想让lable创建出来就有个fontSize可绑定属性，它会根据事件值自动改变标签的文字大小
      */
+    
+    // 五、自定义可绑定属性
+    private func example4() {
+        
+        let observable = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
+        
+        observable
+            .map {
+                CGFloat($0)
+            }
+            .bind(to: lable.rx.fontSize)
+            .disposed(by: disposeBag)
+    }
     private func example3() {
         
         let observable = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
@@ -162,6 +176,22 @@ struct Music {
     init(name: String, singer: String) {
         self.name = name
         self.singer = singer
+    }
+}
+
+extension Reactive where Base: UILabel {
+    var fontSize: Binder<CGFloat> {
+        return Binder(self.base) { lable, fontSize in
+            lable.font = UIFont.systemFont(ofSize: fontSize)
+        }
+    }
+}
+// 自定义可绑定属性
+extension UILabel {
+    var fontSize: Binder<CGFloat> {
+        return Binder(self) { (lable, fontSize) in
+            lable.font = UIFont.systemFont(ofSize: fontSize)
+        }
     }
 }
 
