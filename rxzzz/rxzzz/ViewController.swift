@@ -11,6 +11,7 @@ import RxCocoa
 import RxSwift
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lable: UILabel!
     @IBOutlet weak var tableView: UITableView!
     let musicViewModel = MusicViewModel()
     let disposeBag = DisposeBag()
@@ -18,10 +19,50 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        example1()
-        example2()
+        example3()
 }
-
-
+//MARK:- 观察者（Observer）
+    /*
+     一、介绍：
+     观察者的作用就是监听事件，然后对这个事件作出响应。或者说任何响应事件的行为都是观察者。比如：
+     1.当我们点击按钮，弹出一个提示框，这个提示框就是观察者 Observer<Void>
+     2.当我们请求一个远程的json数据，将其打印出来，那个这个“打印json数据”就是观察者 Observer<JSON>
+     二、直接在subscibe、bind方法中创建观察者
+     1.在subscribe方法中创建
+     （1）创建观察者最直接的方法就是在Observable的subscribe方法后面描述当事件放生时，需要如何做出响应。比如onNext，onError， onComplete
+     2.在bind方法中创建
+     （1）我们创建一个定时生成索引数的Observable序列，并将索引数不断显示在lable标签上
+     三、使用AnyOberver创建观察者
+     AnyOberver可以用来描述任意一种观察者
+     1.配合subscribe方法使用：
+     2.配合bindTo方法使用
+     四、使用Binder创建观察者
+     也可配合Observable的数据绑定方法（bindTo）使用
+     五、自定义可绑定属性
+     
+     */
+    private func example3() {
+        
+        let observable = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
+//        observable
+//            .map {
+//                "当前索引数：\($0)"
+//            }
+//            .bind { [weak self] text in
+//                self?.lable.text = text
+//            }
+//            .disposed(by: disposeBag)
+        let observer: Binder = Binder(lable) { (view, text) in
+            view.text = text
+        }
+        observable
+            .map {
+            "当前索引数：\($0)"
+        }
+            .bind(to: observer)
+        
+            .disposed(by: disposeBag)
+    }
 //MARK:- 订阅
     /*
      有了 Observable，我们还要使用 subscribe() 方法来订阅它，接收它发出的 Event。
