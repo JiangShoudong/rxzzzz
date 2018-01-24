@@ -354,3 +354,99 @@ rxzzz/Pods/Target Support Files/RxSwift/RxSwift-prefix.pch
 rxzzz/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h
 rxzzz/Pods/Target Support Files/RxSwift/RxSwift.modulemap
 rxzzz/Pods/Target Support Files/RxSwift/RxSwift.xcconfig
+rxzzz/Pods/Alamofire/LICENSE
+rxzzz/Pods/Alamofire/README.md
+rxzzz/Pods/Alamofire/Source/AFError.swift
+rxzzz/Pods/Alamofire/Source/Alamofire.swift
+rxzzz/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+rxzzz/Pods/Alamofire/Source/MultipartFormData.swift
+rxzzz/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+rxzzz/Pods/Alamofire/Source/Notifications.swift
+rxzzz/Pods/Alamofire/Source/ParameterEncoding.swift
+rxzzz/Pods/Alamofire/Source/Request.swift
+rxzzz/Pods/Alamofire/Source/Response.swift
+rxzzz/Pods/Alamofire/Source/ResponseSerialization.swift
+rxzzz/Pods/Alamofire/Source/Result.swift
+rxzzz/Pods/Alamofire/Source/ServerTrustPolicy.swift
+rxzzz/Pods/Alamofire/Source/SessionDelegate.swift
+rxzzz/Pods/Alamofire/Source/SessionManager.swift
+rxzzz/Pods/Alamofire/Source/TaskDelegate.swift
+rxzzz/Pods/Alamofire/Source/Timeline.swift
+rxzzz/Pods/Alamofire/Source/Validation.swift
+rxzzz/Pods/Moya/License.md
+rxzzz/Pods/Moya/Readme.md
+rxzzz/Pods/Moya/Sources/Moya/AnyEncodable.swift
+rxzzz/Pods/Moya/Sources/Moya/Cancellable.swift
+rxzzz/Pods/Moya/Sources/Moya/Endpoint.swift
+rxzzz/Pods/Moya/Sources/Moya/Image.swift
+rxzzz/Pods/Moya/Sources/Moya/Moya+Alamofire.swift
+rxzzz/Pods/Moya/Sources/Moya/MoyaError.swift
+rxzzz/Pods/Moya/Sources/Moya/MoyaProvider+Defaults.swift
+rxzzz/Pods/Moya/Sources/Moya/MoyaProvider+Internal.swift
+rxzzz/Pods/Moya/Sources/Moya/MoyaProvider.swift
+rxzzz/Pods/Moya/Sources/Moya/MultipartFormData.swift
+rxzzz/Pods/Moya/Sources/Moya/MultiTarget.swift
+rxzzz/Pods/Moya/Sources/Moya/Plugin.swift
+rxzzz/Pods/Moya/Sources/Moya/Response.swift
+rxzzz/Pods/Moya/Sources/Moya/TargetType.swift
+rxzzz/Pods/Moya/Sources/Moya/Task.swift
+rxzzz/Pods/Moya/Sources/Moya/URL+Moya.swift
+rxzzz/Pods/Moya/Sources/Moya/URLRequest+Encoding.swift
+rxzzz/Pods/Moya/Sources/Moya/Plugins/AccessTokenPlugin.swift
+rxzzz/Pods/Moya/Sources/Moya/Plugins/CredentialsPlugin.swift
+rxzzz/Pods/Moya/Sources/Moya/Plugins/NetworkActivityPlugin.swift
+rxzzz/Pods/Moya/Sources/Moya/Plugins/NetworkLoggerPlugin.swift
+rxzzz/Pods/ObjectMapper/LICENSE
+rxzzz/Pods/ObjectMapper/README-CN.md
+rxzzz/Pods/ObjectMapper/Sources/CustomDateFormatTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/DataTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/DateFormatterTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/DateTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/DictionaryTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/EnumOperators.swift
+rxzzz/Pods/ObjectMapper/Sources/EnumTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/FromJSON.swift
+rxzzz/Pods/ObjectMapper/Sources/HexColorTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/ImmutableMappable.swift
+rxzzz/Pods/ObjectMapper/Sources/IntegerOperators.swift
+rxzzz/Pods/ObjectMapper/Sources/ISO8601DateTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/Map.swift
+rxzzz/Pods/ObjectMapper/Sources/MapError.swift
+rxzzz/Pods/ObjectMapper/Sources/Mappable.swift
+rxzzz/Pods/ObjectMapper/Sources/Mapper.swift
+rxzzz/Pods/ObjectMapper/Sources/NSDecimalNumberTransform.swift
+rxzzz/Pods/ObjectMapper/Sources/Operators.swift
+rxzzz/Pods/ObjectMapper/Sources/ToJSON.swift
+rxzzz/Pods/ObjectMapper/Sources/TransformOf.swift
+rxzzz/Pods/ObjectMapper/Sources/TransformOperators.swift
+rxzzz/Pods/ObjectMapper/Sources/TransformType.swift
+rxzzz/Pods/ObjectMapper/Sources/URLTransform.swift
+rxzzz/Pods/Result/LICENSE
+rxzzz/Pods/Result/README.md
+rxzzz/Pods/Result/Result/Result.swift
+rxzzz/Pods/Result/Result/ResultProtocol.swift
+rxzzz/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+rxzzz/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+rxzzz/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+rxzzz/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+rxzzz/Pods/Target Support Files/Alamofire/Alamofire.xcconfig
+rxzzz/Pods/Target Support Files/Alamofire/Info.plist
+rxzzz/Pods/Target Support Files/Moya/Info.plist
+rxzzz/Pods/Target Support Files/Moya/Moya-dummy.m
+rxzzz/Pods/Target Support Files/Moya/Moya-prefix.pch
+rxzzz/Pods/Target Support Files/Moya/Moya-umbrella.h
+rxzzz/Pods/Target Support Files/Moya/Moya.modulemap
+rxzzz/Pods/Target Support Files/Moya/Moya.xcconfig
+rxzzz/Pods/Target Support Files/ObjectMapper/Info.plist
+rxzzz/Pods/Target Support Files/ObjectMapper/ObjectMapper-dummy.m
+rxzzz/Pods/Target Support Files/ObjectMapper/ObjectMapper-prefix.pch
+rxzzz/Pods/Target Support Files/ObjectMapper/ObjectMapper-umbrella.h
+rxzzz/Pods/Target Support Files/ObjectMapper/ObjectMapper.modulemap
+rxzzz/Pods/Target Support Files/ObjectMapper/ObjectMapper.xcconfig
+rxzzz/Pods/Target Support Files/Result/Info.plist
+rxzzz/Pods/Target Support Files/Result/Result-dummy.m
+rxzzz/Pods/Target Support Files/Result/Result-prefix.pch
+rxzzz/Pods/Target Support Files/Result/Result-umbrella.h
+rxzzz/Pods/Target Support Files/Result/Result.modulemap
+rxzzz/Pods/Target Support Files/Result/Result.xcconfig
+rxzzz/rxzzz/UserAPI.swift

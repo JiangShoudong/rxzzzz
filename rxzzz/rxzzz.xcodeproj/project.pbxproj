@@ -12,6 +12,8 @@
 		4CA0F852200DE96F00B12199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0F850200DE96F00B12199 /* Main.storyboard */; };
 		4CA0F854200DE96F00B12199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0F853200DE96F00B12199 /* Assets.xcassets */; };
 		4CA0F857200DE96F00B12199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0F855200DE96F00B12199 /* LaunchScreen.storyboard */; };
+		4CF577C920188120003AADBD /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF577C820188120003AADBD /* UserAPI.swift */; };
+		4CF577CB201883E3003AADBD /* Observable + ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF577CA201883E3003AADBD /* Observable + ObjectMapper.swift */; };
 		53D5893DD7E64BA981D94CA1 /* Pods_rxzzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FF8A83F98DBAD4422BC749 /* Pods_rxzzz.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		4CA0F853200DE96F00B12199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA0F856200DE96F00B12199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA0F858200DE96F00B12199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF577C820188120003AADBD /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		4CF577CA201883E3003AADBD /* Observable + ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable + ObjectMapper.swift"; sourceTree = "<group>"; };
 		82987C80E379DD1D81648F28 /* Pods-rxzzz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxzzz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rxzzz/Pods-rxzzz.debug.xcconfig"; sourceTree = "<group>"; };
 		A4FF8A83F98DBAD4422BC749 /* Pods_rxzzz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rxzzz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				4CA0F84C200DE96F00B12199 /* AppDelegate.swift */,
+				4CF577C820188120003AADBD /* UserAPI.swift */,
+				4CF577CA201883E3003AADBD /* Observable + ObjectMapper.swift */,
 				4CA0F84E200DE96F00B12199 /* ViewController.swift */,
 				4CA0F850200DE96F00B12199 /* Main.storyboard */,
 				4CA0F853200DE96F00B12199 /* Assets.xcassets */,
@@ -166,11 +172,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-rxzzz/Pods-rxzzz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -221,6 +235,8 @@
 			files = (
 				4CA0F84F200DE96F00B12199 /* ViewController.swift in Sources */,
 				4CA0F84D200DE96F00B12199 /* AppDelegate.swift in Sources */,
+				4CF577CB201883E3003AADBD /* Observable + ObjectMapper.swift in Sources */,
+				4CF577C920188120003AADBD /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
